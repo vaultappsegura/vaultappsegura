@@ -1,0 +1,15 @@
+node_modules
+target
+gen
+.git
+.gemini
+.agents
+.gradle
+*.tar.gz
+*.zip
+*.sqlite*
+*.log
+payload.jpg
+.vscode
+build
+*.md

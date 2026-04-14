@@ -1,0 +1,41 @@
+================================================================
+  VAULT v0.1.0 — SHA256 Checksums (Firmas de Integridad)
+  Fecha de generación / Generated on: 2026-03-23
+================================================================
+
+Verifica que el hash de tu archivo descargado coincida
+exactamente con el listado aquí. Si no coincide, el archivo
+pudo haber sido alterado. ¡No lo ejecutes!
+
+Verify that the hash of your downloaded file matches exactly
+with the one listed here. If it doesn't match, the file may
+have been tampered with. Do not run it!
+
+----------------------------------------------------------------
+  WINDOWS
+----------------------------------------------------------------
+
+Vault_0.1.0_x64-setup.exe (NSIS Installer)
+SHA256: 471f9a869f8527ff8dd04c54e1f3d6f4cea4ba2fbb349c8761bb2ec2da4802e5
+
+Vault_0.1.0_x64_en-US.msi (MSI Installer)
+SHA256: 27425d3f29cd1c6f24a29fe20772339d942fcfe3aa6ee247763da1095ca4bda8
+
+----------------------------------------------------------------
+  LINUX
+----------------------------------------------------------------
+
+Vault_0.1.0_amd64.deb (Debian/Ubuntu Package)
+SHA256: 57b01ee6ae838de71d6a866756f5a8c925a44fd1318de4f3fae448b45a6fcc25
+
+================================================================
+  ¿Cómo verificar? / How to verify?
+================================================================
+
+  Windows (PowerShell):
+    Get-FileHash .\Vault_0.1.0_x64-setup.exe -Algorithm SHA256
+
+  Linux / macOS (Terminal):
+    sha256sum Vault_0.1.0_amd64.deb
+
+================================================================

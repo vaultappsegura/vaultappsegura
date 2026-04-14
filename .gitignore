@@ -1,0 +1,69 @@
+# Módulos y Dependencias JavaScript
+node_modules/
+package-lock.json
+
+# Compilación de Rust y Tauri
+app/src-tauri/target/
+target/
+
+# Compilaciones y Cachés Nativos de Android
+app/src-tauri/gen/android/app/build/
+app/src-tauri/gen/android/.gradle/
+app/src-tauri/gen/android/build/
+app/src-tauri/gen/android/app/src/main/jniLibs/
+.gradle/
+build/
+*.apk
+*.aab
+
+# Datos Confidenciales, Bases de Datos Locales y Llaves
+*.sqlite
+*.sqlite-journal
+*.db
+*.keystore
+*.jks
+*.pem
+*.key
+.env
+.env.*
+
+# Logs y Archivos Temporales (OPSEC Fuerte)
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+
+# Entornos Virtuales y Editores
+.vscode/
+.idea/
+.gemini/
+.agents/
+
+# Archivos multimedia de prueba o temporales
+payload.jpg
+*.pdf
+*.docx
+*.mp4
+*.png
+!portal/*.png
+!portal/img/*.png
+!portal/img/*.jpg
+!app/src-tauri/icons/*.png
+!app/src-tauri/icons/*.ico
+
+# Cuadernos de Inteligencia, Reglas y Drafts Internos
+task.md
+temp.md
+*.py
+
+# Large Binaries (Dynamic Fetch over CI/CD)
+app/src-tauri/binaries/ipfs*
+app/src-tauri/binaries.tar.gz
+app/ipfs.exe
+
+# Windows NTFS Alternate Data Streams Extracted in Linux
+*Zone.Identifier

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vault - 抵御全球审查的非对称加密通讯与匿名泄密网络。">
+    <title>Vault | 密码学与匿名</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+        <nav class="lang-router">
+        <a href="index.html">EN</a>
+        <a href="index-es.html">ES</a>
+        <a href="index-ru.html">RU</a>
+        <a href="index-zh.html" class="active">ZH</a>
+        <a href="index-ar.html">AR</a>
+        <a href="index-fr.html">FR</a>
+        <a href="index-pt.html">PT</a>
+        <a href="index-de.html">DE</a>
+        <a href="index-it.html">IT</a>
+        <a href="index-ja.html">JA</a>
+        <a href="index-ko.html">KO</a>
+        <a href="index-tr.html">TR</a>
+    </nav>
+
+    <header class="top-nav">
+        <div class="brand">
+            <img class="logo-shield" src="logo.png" alt="Vault Icon">
+            <h1>VAULT</h1>
+        </div>
+        <div class="technical-stats">
+            <div class="stat-indicator">
+                <span class="status-dot"></span>
+                <span>活跃全球节点: <strong class="counter">42,881</strong></span>
+            </div>
+            <div class="stat-indicator tor-status">
+                <svg viewBox="0 0 34 34" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"></path><path d="M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6z"></path><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></svg>
+                <span>Tor 网络运作中</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="manifesto-card">
+            <h2>你的声音是武器。 <span>我们是盾牌。</span></h2>
+            <div class="manifesto-text">
+                <p>Vault 不是一家公司，而是一种数学协议。</p>
+                <p>我们设计了这种去中心化的公共网络，专门用于在不留下任何数字痕迹的情况下举报腐败、政府文件泄密和企业滥用。</p>
+                <ul class="features-list">
+                    <li><span class="highlight">零知识保证:</span> 你的消息通过暗网 (Tor) 原生传输。我们不知道你是谁，数学上也无法知道。</li>
+                    <li><span class="highlight">取证大赦:</span> 该应用程序会消除你上传文件的矩阵，并擦除 GPS 坐标、相机型号和时间签名。</li>
+                    <li><span class="highlight">完全去中心化:</span> 由 Nostr 和 IPFS 协议保护的 P2P 数据库。没有人能删除已传输的记录。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-text">
+                <h2>什么是 VAULT?</h2>
+                <p>Vault 是一款非对称通信客户端，旨在应对基础设施级别的审查。与传统的平台 (Signal, Telegram) 不同，Vault 缺乏可以被黑客攻击、法院传唤或扣押的“中央服务器”。</p>
+                
+                <h3>系统剖析</h3>
+                <ul class="features-list">
+                    <li><span class="highlight">洋葱路由:</span> 所有流量都通过本地 SOCKS5 隧道以加密方式强制传输，跨越多个洲在 Tor 网络上反弹。</li>
+                    <li><span class="highlight">一次性身份 (神风特攻队):</span> 没有电话号码，没有电子邮件。启动泄漏然后摧毁客户端；美国国家安全局无法调查账户保留数据。</li>
+                    <li><span class="highlight">物理不可知论:</span> Vault 不使用传统的 DNS。如果某个国家审查了 20 个中继，该网络将立即透明地重定向到全球其他 50 个镜像节点。</li>
+                </ul>
+            </div>
+            
+            <div class="about-visuals">
+                <div class="mockup-frame">
+                    <img src="app-screenshot.png" alt="Vault Interface">
+                </div>
+            </div>
+        </section>
+
+        <section class="download-hub">
+            <div class="terminal-header">
+                <span class="btn-red"></span>
+                <span class="btn-yellow"></span>
+                <span class="btn-green"></span>
+                <span class="terminal-title">~/vault/releases/v1.0.0</span>
+            </div>
+            <div class="terminal-body">
+                <h3>获取主可执行文件</h3>
+                <p class="warning-text">⚠️ 警告: 安装前始终验证 SHA-256 签名。</p>
+                
+                <div class="download-grid">
+                    <a href="releases/Vault-Release-Signed.apk" class="dl-btn android-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 16h14"/><path d="M5 10A7 7 0 0 1 19 10"/><path d="M8 5l1.5 2.5"/><path d="M16 5l-1.5 2.5"/></svg>
+                        <div>
+                            <strong>Android APK</strong>
+                            <span>Arm64 / 通用构建 • 23 MB</span>
+                        </div>
+                    </a>
+
+                    <a href="releases/Vault-Linux-x86_64.AppImage" class="dl-btn linux-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10v4h-4a2 2 0 1 1-4 0v-4H8a2 2 0 1 1 0-4h4V2h4v4a2 2 0 0 1 4 0h4v4h-4z"/></svg>
+                        <div>
+                            <strong>Linux AppImage</strong>
+                            <span>Debian / Ubuntu / Arch • 85 MB</span>
+                        </div>
+                    </a>
+
+                    <a href="releases/Vault-Windows-Setup.exe" class="dl-btn windows-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                        <div>
+                            <strong>Windows EXE</strong>
+                            <span>Windows 10 / 11 • 78 MB</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="checksums">
+                    <p>> sha256sum Vault-Release-Signed.apk</p>
+                    <p class="hash">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hydra-strategy">
+            <div class="hydra-content">
+                <h2>九头蛇: 斩断一头，两头生出。</h2>
+                <p>这个表网域名已被国家审查机构盯上。你需要下载整个网站 (只有 15KB) 并将其上传到 P2P 网络或自己的服务器上，以维持 Vault 网络的生存。</p>
+                <div class="code-block">
+                    <code>git clone https://github.com/TUDOMINIO/vault-portal.git</code>
+                </div>
+                <a href="https://github.com/TUDOMINIO/vault-portal/archive/refs/heads/main.zip" class="mirror-btn">
+                    <span>↓</span> 下载门户 ZIP 镜像
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-bottom">
+        <div class="footer-content">
+            <p class="pure-code-badge">100% PURE HTML & CSS. ZERO JAVASCRIPT. ZERO TRACKING.</p>
+            <p>洋葱不可腐败的地址 (Tor):</p>
+            <p class="onion-address">vaultxj6xj32jkhl78xj2kjxl1.onion</p>
+        </div>
+    </footer>
+</body>
+</html>

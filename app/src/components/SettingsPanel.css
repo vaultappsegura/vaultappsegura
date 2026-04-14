@@ -1,0 +1,295 @@
+/**
+ * ============================================================================
+ * ARCHIVO: SettingsPanel.css
+ * ============================================================================
+ */
+
+.settings-panel {
+    /* Variables base (Dark Mode por defecto, hereda de App.css si existe) */
+    --panel-bg: var(--card-bg, #151a26);
+    --panel-text: var(--text-primary, #e2e8f0);
+    --panel-text-sec: var(--text-secondary, #94a3b8);
+    --panel-border: rgba(255, 255, 255, 0.15);
+    --panel-hover: rgba(255, 255, 255, 0.05);
+    --panel-accent: var(--accent, #3b82f6);
+    --panel-input-bg: rgba(0, 0, 0, 0.3);
+
+    background-color: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    border-radius: 8px;
+    padding: 2rem;
+    color: var(--panel-text);
+    max-width: 600px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tema Claro Dinamico */
+:root.theme-light .settings-panel {
+    --panel-bg: #ffffff;
+    --panel-text: #1c1e21;
+    --panel-text-sec: #55575b;
+    --panel-border: #ced0d4;
+    --panel-hover: #f0f2f5;
+    --panel-accent: #1a73e8;
+    --panel-input-bg: #ffffff;
+}
+
+.settings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--panel-border);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.settings-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--panel-accent);
+}
+
+.close-btn {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--panel-text-sec);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.close-btn:hover {
+    background: var(--panel-hover);
+    color: var(--panel-text);
+}
+
+.settings-section {
+    margin-bottom: 2rem;
+}
+
+.settings-section h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--panel-text);
+}
+
+.setting-desc {
+    font-size: 0.9rem;
+    color: var(--panel-text-sec);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.settings-divider {
+    border: 0;
+    border-top: 1px solid var(--panel-border);
+    margin: 2rem 0;
+}
+
+/* Radio Group (Tema) */
+.radio-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--panel-border);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--panel-hover);
+    transition: all 0.2s ease;
+    flex: 1;
+}
+
+.radio-group label:hover {
+    border-color: var(--panel-accent);
+}
+
+.radio-group label.active {
+    border-color: var(--panel-accent);
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+/* Custom Selects */
+.custom-select-container {
+    position: relative;
+    width: 100%;
+    user-select: none;
+}
+
+.custom-select-button {
+    width: 100%;
+    padding: 0.85rem;
+    padding-right: 2.5rem;
+    background-color: var(--panel-input-bg);
+    color: var(--panel-text);
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.2rem;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.custom-select-button.open {
+    border-color: var(--panel-accent);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.custom-select-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--panel-bg);
+    border: 1px solid var(--panel-accent);
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    z-index: 1000;
+    max-height: 250px;
+    overflow-y: auto;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.custom-select-option {
+    padding: 0.85rem 1rem;
+    color: var(--panel-text);
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.1s ease;
+}
+
+.custom-select-option:hover {
+    background-color: var(--panel-hover);
+}
+
+.custom-select-option.selected {
+    background-color: rgba(59, 130, 246, 0.15);
+    color: var(--panel-accent);
+    font-weight: 600;
+}
+
+.settings-section select:focus {
+    border-color: var(--panel-accent);
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Relays */
+.relay-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.relay-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background-color: var(--panel-hover);
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+.add-relay-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.add-relay-form input {
+    flex: 1;
+    padding: 0.75rem;
+    background-color: var(--panel-input-bg);
+    color: var(--panel-text);
+    border: 1px solid var(--panel-border);
+    border-radius: 6px;
+    font-family: monospace;
+}
+
+.add-relay-form input:focus {
+    outline: none;
+    border-color: var(--panel-accent);
+}
+
+.setting-notice {
+    font-size: 0.85rem;
+    color: #f59e0b;
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Info Box para Periodistas */
+.relay-info-box {
+    background-color: rgba(59, 130, 246, 0.08);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.relay-info-box h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: var(--panel-accent);
+    font-size: 1rem;
+}
+
+.relay-info-box p {
+    margin-bottom: 0.5rem;
+}
+
+.relay-info-box ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.relay-info-box li {
+    margin-bottom: 0.3rem;
+}
+
+.relay-info-box code {
+    background: var(--panel-input-bg);
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.85rem;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 768px) {
+    .settings-panel {
+        margin: 0;
+        border-radius: 12px;
+        padding: 1.25rem 1rem;
+    }
+    .radio-group {
+        flex-direction: column;
+    }
+    .add-relay-form {
+        flex-direction: column;
+    }
+}
