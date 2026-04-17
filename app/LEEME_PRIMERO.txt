@@ -1,0 +1,36 @@
+============================================================
+           INSTRUCCIONES DE INSTALACIÓN (LINUX)
+============================================================
+
+Para instalar "Vault" en tu sistema Linux, sigue estos 
+pasos sencillos:
+
+1. Abre una terminal en esta misma carpeta.
+   (Puedes hacer clic derecho en un espacio vacío de la 
+   carpeta y seleccionar "Abrir en una terminal").
+
+2. Copia y pega el siguiente comando para dar permisos de
+   ejecución al instalador:
+
+   chmod +x install_linux.sh
+
+3. Ejecuta el instalador con este comando:
+
+   ./install_linux.sh
+
+4. Sigue las instrucciones en pantalla (selecciona tu idioma).
+   Se te pedirá tu contraseña de administrador para finalizar.
+
+5. Una vez terminada la instalación, puedes abrir "Vault"
+   desde el buscador de aplicaciones de tu sistema (presiona
+   la tecla "Super/Windows" y escribe "Vault"). 
+   
+   También puedes abrirlo escribiendo 'vault' en la terminal.
+
+Nota: Dentro de la aplicación (Configuración), puedes 
+cambiar el idioma a cualquiera de las 13 opciones 
+disponibles (Inglés, Chino, Árabe, Francés, etc).
+
+------------------------------------------------------------
+¡Gracias por usar Vault y defender la libertad de expresión!
+============================================================

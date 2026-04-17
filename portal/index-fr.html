@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vault - Réseau asymétrique de communication et de fuites anonymes.">
+    <title>Vault | Cryptographie & Anonymat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+        <nav class="lang-router">
+        <a href="index.html">EN</a>
+        <a href="index-es.html">ES</a>
+        <a href="index-ru.html">RU</a>
+        <a href="index-zh.html">ZH</a>
+        <a href="index-ar.html">AR</a>
+        <a href="index-fr.html" class="active">FR</a>
+        <a href="index-pt.html">PT</a>
+        <a href="index-de.html">DE</a>
+        <a href="index-it.html">IT</a>
+        <a href="index-ja.html">JA</a>
+        <a href="index-ko.html">KO</a>
+        <a href="index-tr.html">TR</a>
+    </nav>
+
+    <header class="top-nav">
+        <div class="brand">
+            <img class="logo-shield" src="logo.png" alt="Vault Icon">
+            <h1>VAULT<span class="beta-badge">BETA</span></h1>
+        </div>
+        <div class="technical-stats">
+            <div class="stat-indicator">
+                <span class="status-dot"></span>
+                <span>Nœuds Globaux Actifs: <strong class="counter">42,881</strong></span>
+            </div>
+            <div class="stat-indicator tor-status">
+                <svg viewBox="0 0 34 34" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"></path><path d="M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6z"></path><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></svg>
+                <span>Réseau Tor Opérationnel</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="manifesto-card">
+            <h2>Votre Voix est l'Arme. <span>Nous sommes le Bouclier.</span></h2>
+            <div class="manifesto-text">
+                <p>Vault n'est pas une entreprise. C'est un protocole mathématique.</p>
+                <p>Nous avons conçu ce réseau public décentralisé spécifiquement pour signaler la corruption, voler des documents gouvernementaux et des abus corporatifs sans laisser de traces.</p>
+                <ul class="features-list">
+                    <li><span class="highlight">Garantie Zero-Knowledge:</span> Vos messages multimédias traversent le Dark Web (Tor v3) de manière native. Nous ne savons pas qui vous êtes.<br><br><em>⚠️ Le navigateur TOR ne fonctionne pas dans la version Android.</em></li>
+                    <li><span class="highlight">Amnistie Médico-légale:</span> L'application supprime les matrices de vos photographies téléchargées et détruit les coordonnées GPS, les modèles d'appareils photo et les horodatages.</li>
+                    <li><span class="highlight">Totalement Décentralisé:</span> Base de données P2P protégée par le protocole Nostr et IPFS. Personne ne peut effacer un enregistrement une fois transmis.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-text">
+                <h2>Qu'est-ce que VAULT?</h2>
+                <p>Vault est un client de communication conçu pour survivre à des interventions étatiques. Contrairement aux plateformes (Signal, Telegram), Vault n'a pas de "Serveurs Centraux" pouvant être piratés ou saisis.</p>
+                
+                <h3>Anatomie du Système</h3>
+                <ul class="features-list">
+                    <li><span class="highlight">Routage Oignon:</span> Tout le trafic est cryptographiquement forcé via un tunnel SOCKS5 local, rebondissant votre trafic sur le Réseau Tor.</li>
+                    <li><span class="highlight">Identité Jetable (Kamikaze):</span> Sans numéros de téléphone ni e-mails. Lancez votre fuite puis détruisez les clés générées localement.</li>
+                    <li><span class="highlight">Agnosticisme Physique:</span> Au lieu du DNS, Vault interroge des centaines de relais publics. Si votre pays censure 20 serveurs, le réseau commute de manière transparente vers 50 autres à travers le monde.</li>
+                </ul>
+            </div>
+            
+            <div class="about-visuals">
+                <div class="mockup-frame">
+                    <img src="app-screenshot.png" alt="Interface Vault">
+                </div>
+            </div>
+        </section>
+
+        <section class="download-hub">
+            <div class="terminal-header">
+                <span class="btn-red"></span>
+                <span class="btn-yellow"></span>
+                <span class="btn-green"></span>
+                <span class="terminal-title">~/vault/releases/v1.0.0</span>
+            </div>
+            <div class="terminal-body">
+                <h3>Obtenir l'Exécutable</h3>
+                <p class="warning-text">⚠️ Vérifiez toujours la signature SHA-256 ci-dessous avant de procéder aux installations.</p>
+                
+                <div class="download-grid">
+                    <a href="https://github.com/vaultappsegura/vaultappsegura/releases/latest" class="dl-btn android-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 16h14"/><path d="M5 10A7 7 0 0 1 19 10"/><path d="M8 5l1.5 2.5"/><path d="M16 5l-1.5 2.5"/></svg>
+                        <div>
+                            <strong>Android APK</strong>
+                            <span>Arm64 / Universel • 23 MB</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/vaultappsegura/vaultappsegura/releases/latest" class="dl-btn linux-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10v4h-4a2 2 0 1 1-4 0v-4H8a2 2 0 1 1 0-4h4V2h4v4a2 2 0 0 1 4 0h4v4h-4z"/></svg>
+                        <div>
+                            <strong>Linux AppImage</strong>
+                            <span>Debian / Ubuntu / Arch • 85 MB</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/vaultappsegura/vaultappsegura/releases/latest" class="dl-btn windows-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                        <div>
+                            <strong>Windows EXE</strong>
+                            <span>Windows 10 / 11 • 78 MB</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="checksums">
+                    <p>> sha256sum Vault-Release-Signed.apk</p>
+                    <p class="hash">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hydra-strategy">
+            <div class="hydra-content">
+                <h2>Coupez une tête, il en poussera deux.</h2>
+                <p>Ce domaine Clearnet est sous la surveillance de l'État. La survie de Vault dépend de vous. Téléchargez le site entier localement et diffusez-le sur des serveurs, des réseaux P2P ou IPFS.</p>
+                <div class="code-block">
+                    <code>git clone https://github.com/vaultappsegura/vaultappsegura.git</code>
+                </div>
+                <a href="https://github.com/vaultappsegura/vaultappsegura/archive/refs/heads/main.zip" class="mirror-btn">
+                    <span>↓</span> Télécharger le Portail ZIP (Miroir)
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-bottom">
+        <div class="footer-content">
+            <p class="pure-code-badge">100% PURE HTML & CSS. ZERO JAVASCRIPT. ZERO TRACKING.</p>
+            <p>Adresse Onion Incorruptible :</p>
+            <p class="onion-address">vaultxj6xj32jkhl78xj2kjxl1.onion</p>
+        </div>
+    </footer>
+</body>
+</html>

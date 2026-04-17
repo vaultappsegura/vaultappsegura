@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vault - Asymmetric communication and anonymous leak network resistant to global censorship.">
+    <title>Vault | 암호화 및 익명성</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+        <nav class="lang-router">
+        <a href="index.html" >EN</a>
+        <a href="index-es.html">ES</a>
+        <a href="index-ru.html">RU</a>
+        <a href="index-zh.html">ZH</a>
+        <a href="index-ar.html">AR</a>
+        <a href="index-fr.html">FR</a>
+        <a href="index-pt.html">PT</a>
+        <a href="index-de.html">DE</a>
+        <a href="index-it.html">IT</a>
+        <a href="index-ja.html">JA</a>
+        <a href="index-ko.html" class="active">KO</a>
+        <a href="index-tr.html">TR</a>
+    </nav>
+
+    <header class="top-nav">
+        <div class="brand">
+            <img class="logo-shield" src="logo.png" alt="Vault Icon">
+            <h1>VAULT<span class="beta-badge">BETA</span></h1>
+        </div>
+        <div class="technical-stats">
+            <div class="stat-indicator">
+                <span class="status-dot"></span>
+                <span>활성 글로벌 노드: <strong class="counter">42,881</strong></span>
+            </div>
+            <div class="stat-indicator tor-status">
+                <svg viewBox="0 0 34 34" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"></path><path d="M12 6a6 6 0 1 0 6 6 6 6 0 0 0-6-6z"></path><path d="M12 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"></path></svg>
+                <span>Tor 네트워크 작동 중</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="manifesto-card">
+            <h2>당신의 목소리가 무기입니다. <span>우리가 방패입니다.</span></h2>
+            <div class="manifesto-text">
+                <p>Vault는 기업이 아닙니다. 수학적 프로토콜입니다.</p>
+                <p>디지털 발자국을 남기지 않고 문서 유출을 신고하기 위해 구축되었습니다.</p>
+                <ul class="features-list">
+                    <li><span class="highlight">영지식 보장:</span> 다크웹(Tor v3)을 통해 메시지가 전송됩니다. 우리는 당신이 누구인지 모릅니다.<br><br><em>⚠️ Android 버전에서는 TOR 브라우저가 작동하지 않습니다.</em></li>
+                    <li><span class="highlight">포렌식 사면:</span> 이 앱은 사진의 매트릭스를 제거하여 GPS 좌표, 카메라 모델 등 메타데이터를 지웁니다.</li>
+                    <li><span class="highlight">완전한 탈중앙화:</span> Nostr 및 IPFS 프로토콜로 보호됩니다.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-text">
+                <h2>VAULT란 무엇입니까?</h2>
+                <p>해킹하거나 영장을 압수할 중앙 서버가 없습니다.</p>
+                
+                <h3>시스템 해부</h3>
+                <ul class="features-list">
+                    <li><span class="highlight">어니언 라우팅(기본값):</span> All text and multimedia traffic is cryptographically forced through a local SOCKS5 tunnel, bouncing your connection across continents on the Tor Network prior to re-emission.</li>
+                    <li><span class="highlight">일회용 신원(가미카제):</span> 전화번호 없음, 이메일 없음. 키를 소멸하고 흔적을 지우세요.</li>
+                    <li><span class="highlight">물리적 불가지론:</span> 전통적인 DNS 대신 릴레이를 사용합니다.</li>
+                </ul>
+            </div>
+            
+            <div class="about-visuals">
+                <div class="mockup-frame">
+                    <img src="app-screenshot.png" alt="Vault Command Interface">
+                </div>
+            </div>
+        </section>
+
+        <section class="download-hub">
+            <div class="terminal-header">
+                <span class="btn-red"></span>
+                <span class="btn-yellow"></span>
+                <span class="btn-green"></span>
+                <span class="terminal-title">~/vault/releases/v1.0.0</span>
+            </div>
+            <div class="terminal-body">
+                <h3>마스터 실행 파일 받기</h3>
+                <p class="warning-text">⚠️ 설치 전 SHA-256 서명을 확인하세요.</p>
+                
+                <div class="download-grid">
+                    <a href="https://github.com/vaultappsegura/vaultappsegura/releases/latest" class="dl-btn android-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 16h14"/><path d="M5 10A7 7 0 0 1 19 10"/><path d="M8 5l1.5 2.5"/><path d="M16 5l-1.5 2.5"/></svg>
+                        <div>
+                            <strong>Android APK</strong>
+                            <span>Arm64 / Universal • 23 MB</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/vaultappsegura/vaultappsegura/releases/latest" class="dl-btn linux-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10v4h-4a2 2 0 1 1-4 0v-4H8a2 2 0 1 1 0-4h4V2h4v4a2 2 0 0 1 4 0h4v4h-4z"/></svg>
+                        <div>
+                            <strong>Linux AppImage</strong>
+                            <span>Debian / Ubuntu / Arch • 85 MB</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/vaultappsegura/vaultappsegura/releases/latest" class="dl-btn windows-btn">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                        <div>
+                            <strong>Windows EXE</strong>
+                            <span>Windows 10 / 11 • 78 MB</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="checksums">
+                    <p>> sha256sum Vault-Release-Signed.apk</p>
+                    <p class="hash">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hydra-strategy">
+            <div class="hydra-content">
+                <h2>머리 하나를 자르면 두 개가 더 나타날 것이다.</h2>
+                <p>This (Clearnet) domain is under the crosshairs of state censors. Vault's survival depends on you. Download this entire website (it weighs only 15KB) and seed it to servers, P2P networks, or IPFS.</p>
+                <div class="code-block">
+                    <code>git clone https://github.com/vaultappsegura/vaultappsegura.git</code>
+                </div>
+                <a href="https://github.com/vaultappsegura/vaultappsegura/archive/refs/heads/main.zip" class="mirror-btn">
+                    <span>↓</span> 포털 ZIP 다운로드(미러)
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-bottom">
+        <div class="footer-content">
+            <p class="pure-code-badge">100% PURE HTML & CSS. ZERO JAVASCRIPT. ZERO TRACKING.</p>
+            <p>In-corruptible Onion Address:</p>
+            <p class="onion-address">vaultxj6xj32jkhl78xj2kjxl1.onion</p>
+        </div>
+    </footer>
+</body>
+</html>

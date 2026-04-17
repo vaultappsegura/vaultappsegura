@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vault - شبكة اتصالات وتسريبات غير متماثلة تقاوم الرقابة العالمية وتضمن إخفاء الهوية.">
+    <title>Vault | التشفير وإخفاء الهوية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body { text-align: right; }
+        .technical-stats, .dl-btn, .features-list li, .lang-router { flex-direction: row-reverse; text-align: left; }
+        .features-list li::before { right: -1.5rem; left: auto; content: "←"; }
+    </style>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <div class="scanlines"></div>
+
+        <nav class="lang-router">
+        <a href="index.html">EN</a>
+        <a href="index-es.html">ES</a>
+        <a href="index-ru.html">RU</a>
+        <a href="index-zh.html">ZH</a>
+        <a href="index-ar.html" class="active">AR</a>
+        <a href="index-fr.html">FR</a>
+        <a href="index-pt.html">PT</a>
+        <a href="index-de.html">DE</a>
+        <a href="index-it.html">IT</a>
+        <a href="index-ja.html">JA</a>
+        <a href="index-ko.html">KO</a>
+        <a href="index-tr.html">TR</a>
+    </nav>
+
+    <header class="top-nav" style="flex-direction: row-reverse;">
+        <div class="brand">
+            <img class="logo-shield" src="logo.png" alt="أيقونة Vault">
+            <h1>VAULT<span class="beta-badge">BETA</span></h1>
+        </div>
+        <div class="technical-stats">
+            <div class="stat-indicator">
+                <span>العقد العالمية النشطة: <strong class="counter">42,881</strong></span>
+                <span class="status-dot"></span>
+            </div>
+            <div class="stat-indicator tor-status">
+                <span>شبكة Tor تعمل</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="manifesto-card">
+            <h2>صوتك هو السلاح. <span>نحن الدرع الجبار.</span></h2>
+            <div class="manifesto-text">
+                <p>Vault ليست شركة. إنها بروتوكول رياضي.</p>
+                <p>لقد صممنا هذه الشبكة العامة اللامركزية خصيصا للإبلاغ عن الفساد، وسرقة الوثائق الحكومية والانتهاكات دون ترك آثار رقمية.</p>
+                <ul class="features-list">
+                    <li><span class="highlight">ضمان المعرفة الصفرية:</span> رسائلك تعبر الشبكة المظلمة (Tor) بشكل أصلي وافتراضي. نحن لا نعرف من أنت.<br><br><em>⚠️ متصفح TOR لا يعمل في نسخة الأندرويد.</em></li>
+                    <li><span class="highlight">العفو الجنائي الاستقصائي:</span> يمسح التطبيق المصفوفات الخاصة بصورك ليقضي تماما على إحداثيات الـ GPS ونماذج الكاميرات والطوابع الزمنية.</li>
+                    <li><span class="highlight">لامركزية بالكامل:</span> قاعدة بيانات P2P محمية عبر Nostr و IPFS. لا أحد يستطيع حذف سجل بعد إرساله أبدا.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-text">
+                <h2>ما هو VAULT؟</h2>
+                <p>Vault هو عميل اتصالات غير متماثل مصمم للصمود أمام تدخلات البنية التحتية. بخلاف المنصات التقليدية ، تفتقر Vault إلى "الخوادم المركزية" التي يمكن اختراقها.</p>
+                
+                <h3>تشريح النظام</h3>
+                <ul class="features-list">
+                    <li><span class="highlight">توجيه البصل (Onion):</span> يتم إجبار جميع حركة المرور في نفق SOCKS5 محلي بشكل مشفر، لترتد اتصالك عبر قارات في شبكة Tor.</li>
+                    <li><span class="highlight">هوية المرة الواحدة (Kamikaze):</span> لا أرقام هواتف ولا إيميلات. قم بإطلاق التسريبات ثم دمر العميل بأمان؛ لن تقبض وكالات الأمن على سجل حقيقي للرجوع إليه.</li>
+                    <li><span class="highlight">اللاأدرية الفيزيائية:</span> بدلاً من DNS التقليدي ، تقرأ Vault من مئات المرحلات الـ Relays العالمية. إذا تم حظر 20 خادم في دولتك، يتم التحويل لـ 50 خادم آخر بسلاسة.</li>
+                </ul>
+            </div>
+            
+            <div class="about-visuals">
+                <div class="mockup-frame">
+                    <img src="app-screenshot.png" alt="واجهة أوامر Vault">
+                </div>
+            </div>
+        </section>
+
+        <section class="download-hub">
+            <div class="terminal-header">
+                <span class="btn-green"></span>
+                <span class="btn-yellow"></span>
+                <span class="btn-red"></span>
+                <span class="terminal-title">~/vault/releases/v1.0.0</span>
+            </div>
+            <div class="terminal-body">
+                <h3>احصل على ملف التثبيت</h3>
+                <p class="warning-text">⚠️ راجع دائمًا توقيع SHA-256 قبل الشروع في التثبيت.</p>
+                
+                <div class="download-grid">
+                    <a href="https://github.com/vaultappsegura/vaultappsegura/releases/latest" class="dl-btn android-btn">
+                        <div>
+                            <strong>Android APK</strong>
+                            <span>Arm64 / عام • 23 MB</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/vaultappsegura/vaultappsegura/releases/latest" class="dl-btn linux-btn">
+                        <div>
+                            <strong>Linux AppImage</strong>
+                            <span>Debian / Ubuntu / Arch • 85 MB</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/vaultappsegura/vaultappsegura/releases/latest" class="dl-btn windows-btn">
+                        <div>
+                            <strong>Windows EXE</strong>
+                            <span>Windows 10 / 11 • 78 MB</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="checksums" style="text-align: left;" dir="ltr">
+                    <p>> sha256sum Vault-Release-Signed.apk</p>
+                    <p class="hash">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hydra-strategy">
+            <div class="hydra-content">
+                <h2>اقطع رأسًا، وسيظهر رأسان جديدان.</h2>
+                <p>هذا النطاق المرئي (Clearnet) تحت أعين الرقابة الحكومية باستمرار. بقاء Vault يعتمد عليك. قم بتنزيل هذا الموقع (حجمه 15 كيلو بايت فقط) وارفعه إلى خوادم أخرى.</p>
+                <div class="code-block" style="text-align: left;" dir="ltr">
+                    <code>git clone https://github.com/vaultappsegura/vaultappsegura.git</code>
+                </div>
+                <a href="https://github.com/vaultappsegura/vaultappsegura/archive/refs/heads/main.zip" class="mirror-btn">
+                    <span>↓</span> تحميل نسخة طبق الأصل من البوابة
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-bottom">
+        <div class="footer-content">
+            <p class="pure-code-badge">100% PURE HTML & CSS. ZERO JAVASCRIPT. ZERO TRACKING.</p>
+            <p>عنوان الشبكة المظلمة (Tor) الغير قابل للفساد:</p>
+            <p class="onion-address">vaultxj6xj32jkhl78xj2kjxl1.onion</p>
+        </div>
+    </footer>
+</body>
+</html>

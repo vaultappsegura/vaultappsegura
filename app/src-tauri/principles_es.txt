@@ -1,0 +1,25 @@
+============================================================
+           DECLARACIÓN DE PRINCIPIOS - VAULT
+============================================================
+
+BIENVENIDO A NUESTRA PLATAFORMA
+
+Esta es una plataforma que defiende la libertad de expresión y se opone firmemente a cualquier forma de censura. Aquí buscamos dar voz a las denuncias anónimas contra políticos, empresarios y cualquier otro actor corrupto; queremos proteger a los periodistas para que puedan exponer su trabajo sin arriesgar su vida.
+
+Gracias por intentar hacer del mundo un lugar mejor a través de algo tan simple, pero tan poderoso, como la verdad. A lo largo de los siglos, se han derramado ríos de sangre por algo que parece tan elemental como la libertad. Al utilizar esta plataforma, honramos a todos aquellos que han luchado por esa idea y a quienes dieron su vida para que hoy podamos ejercerla.
+
+Esta no es una plataforma partidista: aquí cualquiera puede expresar su opinión y será respetada. La única manera real de defender nuestra libertad es ejerciéndola, y este espacio busca precisamente eso: ofrecer un lugar donde todos puedan hacerlo de forma plena y sin miedo.
+
+¿CÓMO FUNCIONA Y POR QUÉ ES SEGURA?
+
+Para garantizar tu anonimato absoluto, esta plataforma no utiliza servidores centrales que puedan ser hackeados o confiscados. Todo el tráfico de la aplicación se enruta forzosamente a través de la red Tor (la dark web), lo que oculta tu dirección IP y tu ubicación física de principio a fin.
+
+Además, los mensajes se envían a través del protocolo descentralizado Nostr, donde tu identidad no es un correo o un número de teléfono, sino una llave criptográfica que tú mismo controlas. Toda la comunicación directa cuenta con cifrado de extremo a extremo (E2EE) de grado militar.
+
+Cualquier archivo adjunto (imágenes, documentos) pasa por un proceso de "limpieza" que extirpa metadatos ocultos (como las coordenadas GPS de tus fotos) antes de ser fragmentado y distribuido en la red global IPFS.
+
+Ni los gobiernos, ni corporaciones, ni siquiera los creadores de esta plataforma pueden censurar tus mensajes o revelar tu identidad.
+
+------------------------------------------------------------
+GRACIAS POR SER PARTE DE ESTA LUCHA POR LA VERDAD.
+============================================================

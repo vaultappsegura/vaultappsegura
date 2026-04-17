@@ -1,0 +1,230 @@
+/* DirectMessageChat.css */
+.dm-drawer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Full screen */
+    background: rgba(0, 0, 0, 0.5);
+    /* Dim the background slightly */
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    /* Drawer sticks to the right */
+    backdrop-filter: blur(2px);
+}
+
+.dm-drawer {
+    width: 450px;
+    max-width: 95%;
+    height: calc(100% - 80px); /* Leave space so it doesn't touch edges */
+    margin: 40px 20px; /* Floating look */
+    border-radius: 16px;
+    background-color: var(--card-bg); /* Use card background for consistency */
+    border: 1px solid var(--border-color);
+    box-shadow: -5px 10px 30px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 0.2s ease-out forwards;
+    overflow: hidden; /* Ensure header and footer follow rounded borders */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.dm-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--panel-accent-dark, rgba(0, 0, 0, 0.2));
+}
+
+.dm-target-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dm-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    flex-shrink: 0;
+}
+
+.dm-target-info h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--panel-accent);
+}
+
+.dm-pubkey {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-family: monospace;
+}
+
+.dm-messages-area {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background: var(--bg-color);
+    /* Slightly different from panel to look like a chat box */
+}
+
+.dm-status {
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.dm-bubble-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.dm-bubble-wrapper.mine {
+    justify-content: flex-end;
+}
+
+.dm-bubble-wrapper.theirs {
+    justify-content: flex-start;
+}
+
+.dm-bubble {
+    max-width: 80%;
+    padding: 0.6rem 0.8rem;
+    border-radius: 12px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.dm-bubble p {
+    margin: 0 0 4px 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.dm-time {
+    display: block;
+    font-size: 0.65rem;
+    text-align: right;
+    opacity: 0.7;
+}
+
+.dm-bubble-wrapper.mine .dm-bubble {
+    background-color: var(--panel-accent);
+    color: white;
+    border-bottom-right-radius: 2px;
+}
+
+.dm-bubble-wrapper.theirs .dm-bubble {
+    background-color: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    border-bottom-left-radius: 2px;
+}
+
+.dm-error {
+    color: #ef4444;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+.dm-input-area {
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    background: var(--card-bg);
+    display: flex;
+}
+
+.dm-input-area textarea {
+    flex: 1;
+    resize: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 0.9rem;
+    min-height: 48px;
+    height: 48px;
+    max-height: 120px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.dm-input-area textarea:focus,
+.dm-input-area textarea:not(:placeholder-shown) {
+    outline: none;
+    border-color: var(--panel-accent);
+    height: 120px;
+    min-height: 120px;
+}
+
+.dm-send-btn {
+    background: var(--panel-accent);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.1s, opacity 0.2s;
+}
+
+.dm-send-btn:hover:not(:disabled) {
+    transform: scale(1.05);
+}
+
+.dm-send-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 768px) {
+    .dm-drawer {
+        width: 100%;
+        max-width: 412px;
+        margin: 0 auto;
+        height: 100%; /* Toma toda la pantalla disponible (dependiente de bottom navbar en App.tsx) */
+        border-radius: 0;
+        border: none;
+    }
+    .dm-header {
+        padding: 0.75rem 1rem;
+    }
+    .dm-bubble {
+        max-width: 90%;
+    }
+    .dm-input-area {
+        padding: 0.75rem;
+    }
+}
